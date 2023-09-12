@@ -1,20 +1,20 @@
+package com.schoolbus;
 
 /**
- * Escreva uma descrição da classe Veculo aqui.
+ * Escreva uma descrição da classe Rota aqui.
  * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class Veiculo
+public class Rota
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private int x;
-    
 
     /**
-     * Construtor para objetos da classe Veculo
+     * Construtor para objetos da classe Rota
      */
-    public Veiculo()
+    public Rota()
     {
         // inicializa variáveis de instância
         x = 0;

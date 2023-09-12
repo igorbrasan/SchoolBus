@@ -1,9 +1,9 @@
 #BlueJ class context
-comment0.target=Motorista
-comment0.text=\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Motorista\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\n
+comment0.target=Programacao
+comment0.text=\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Roteiro\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\n
 comment1.params=
-comment1.target=Motorista()
-comment1.text=\n\ Construtor\ para\ objetos\ da\ classe\ Motorista\n
+comment1.target=Programacao()
+comment1.text=\n\ Construtor\ para\ objetos\ da\ classe\ Roteiro\n
 comment2.params=y
 comment2.target=int\ sampleMethod(int)
 comment2.text=\n\ Um\ exemplo\ de\ um\ m\u00E9todo\ -\ substitua\ este\ coment\u00E1rio\ pelo\ seu\ pr\u00F3prio\n\ \n\ @param\ \ y\ \ \ um\ exemplo\ de\ um\ par\u00E2metro\ de\ m\u00E9todo\n\ @return\ \ \ \ \ a\ soma\ de\ x\ e\ y\ \n

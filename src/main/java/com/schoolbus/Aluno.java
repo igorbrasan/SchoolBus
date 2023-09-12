@@ -1,22 +1,23 @@
-
+package com.schoolbus;
 /**
- * Escreva uma descrição da classe Motorista aqui.
+ * Escreva uma descrição da classe Aluno aqui.
  * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class Motorista extends Pessoa
+public class Aluno extends Pessoa
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
+    public Escola escola;
+    public Rota rota;
+    private String matricula, serie;
     private int x;
 
     /**
-     * Construtor para objetos da classe Motorista
+     * Construtor para objetos da classe Aluno
      */
-    public Motorista()
+    public Aluno()
     {
         // inicializa variáveis de instância
-        x = 0;
     }
 
     /**
@@ -25,9 +26,5 @@ public class Motorista extends Pessoa
      * @param  y   um exemplo de um parâmetro de método
      * @return     a soma de x e y 
      */
-    public int sampleMethod(int y)
-    {
-        // escreva seu código aqui
-        return x + y;
-    }
+
 }

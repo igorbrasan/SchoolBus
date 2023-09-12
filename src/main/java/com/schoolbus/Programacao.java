@@ -1,18 +1,17 @@
-
+package com.schoolbus;
 /**
  * Escreva uma descrição da classe Roteiro aqui.
  * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class Programacao
-{
+public class Programacao{
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private int x;
     public Veiculo veiculo;
     public Rota rota;
     public Motorista motorista;
-    public Time horario;
+    public String dataHora;
     
     
     

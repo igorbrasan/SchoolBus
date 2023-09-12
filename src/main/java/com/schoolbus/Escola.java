@@ -1,4 +1,4 @@
-
+package com.schoolbus;
 /**
  * Escreva uma descrição da classe Escola aqui.
  * 

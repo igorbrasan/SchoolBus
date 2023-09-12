@@ -1,19 +1,23 @@
-
+package com.schoolbus;
 /**
- * Escreva uma descrição da classe Rota aqui.
+ * Escreva uma descrição da classe Pessoa aqui.
  * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class Rota
+public class Pessoa
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private int x;
-
+    private String nomeCivil, nomeSocial, cpf, nomePai, nomeMae; 
+    private String naturalidade, telefone;
+    private Endereco endereco;
+    
+    
     /**
-     * Construtor para objetos da classe Rota
+     * Construtor para objetos da classe Pessoa
      */
-    public Rota()
+    public Pessoa()
     {
         // inicializa variáveis de instância
         x = 0;
