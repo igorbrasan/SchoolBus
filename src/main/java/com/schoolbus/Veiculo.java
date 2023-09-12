@@ -13,15 +13,23 @@ public class Veiculo
     private int capacidade, ano;
     private Boolean alugado;
     private Contrato contrato;
-    
-    
 
-    /**
-     * Construtor para objetos da classe Veculo
-     */
-    public Veiculo()
-    {
-        
+    public Veiculo(String placa, String modelo, int capacidade, int ano, Contrato contrato) {
+        this.placa = placa;
+        this.modelo = modelo;
+        this.capacidade = capacidade;
+        this.ano = ano;
+        this.alugado = true;
+        this.contrato = contrato;
+    }
+
+
+    public Veiculo(String placa, String modelo, int capacidade, int ano) {
+        this.placa = placa;
+        this.modelo = modelo;
+        this.capacidade = capacidade;
+        this.ano = ano;
+        this.alugado = false;
     }
 
     public String getPlaca() {
