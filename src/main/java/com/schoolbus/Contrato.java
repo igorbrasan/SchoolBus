@@ -8,18 +8,31 @@ package com.schoolbus;
  */
 public class Contrato
 {
-    private enum tiposContrato{aluguel, terceirizado}
     private String numero;
-    private tiposContrato tipoContrato;
+    private String tipoContrato;
     
     /**
      * Construtor para objetos da classe Contrato
      */
-    public Contrato()
+    public Contrato(String numero, String tipoContrato)
     {
-        // inicializa variáveis de instância
-
+        setNumero(numero);
+        this.tipoContrato = tipoContrato;
     }
 
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
 
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setTipoContrato(String tipoContrato) {
+        this.tipoContrato = tipoContrato;
+    }
+
+    public String getTipoContrato() {
+        return tipoContrato;
+    }
 }

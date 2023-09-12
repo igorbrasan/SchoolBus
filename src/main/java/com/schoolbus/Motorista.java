@@ -26,4 +26,40 @@ public class Motorista extends Pessoa
         this.contrato = contrato;
     }
 
+    public String getNum_cnh() {
+        return num_cnh;
+    }
+
+    public void setNum_cnh(String num_cnh) {
+        this.num_cnh = num_cnh;
+    }
+
+    public String getCategoria_cnh() {
+        return categoria_cnh;
+    }
+
+    public void setCategoria_cnh(String categoria_cnh) {
+        this.categoria_cnh = categoria_cnh;
+    }
+
+    public Boolean getTerceirizado() {
+        return terceirizado;
+    }
+
+    public void setTerceirizado(Boolean terceirizado) {
+        this.terceirizado = terceirizado;
+    }
+
+    public Contrato getContrato() {
+        if (terceirizado) {
+            return contrato;
+        }
+        return null;
+    }
+
+    public void setContrato(Contrato contrato) {
+        if (terceirizado) {
+            this.contrato = contrato;
+        }
+    }
 }
