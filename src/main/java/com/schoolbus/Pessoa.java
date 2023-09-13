@@ -24,6 +24,17 @@ public class Pessoa
         this.endereco = endereco;
     }
 
+    public Pessoa(String nomeCivil, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco) {
+        this.nomeCivil = nomeCivil;
+        this.cpf = cpf;
+        this.nomePai = nomePai;
+        this.nomeMae = nomeMae;
+        this.naturalidade = naturalidade;
+        this.telefone = telefone;
+        this.endereco = endereco;
+        this.nomeSocial = nomeCivil;
+    }
+
     public String getNomeCivil() {
         return nomeCivil;
     }
