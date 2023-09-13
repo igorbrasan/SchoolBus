@@ -1,4 +1,5 @@
 package com.schoolbus;
+
 /**
  * Escreva uma descrição da classe Motorista aqui.
  * 

@@ -1,13 +1,13 @@
 package com.schoolbus;
+
 /**
- * Escreva uma descrição da classe Escola aqui.
- * 
- * @author (seu nome) 
- * @version (um número da versão ou uma data)
+ * Classe que descreve a entidade escola no sistema SchoolBus
+ * Futuramente deve ser usada como ponto de destino para o schoolBus por meio do parametro endereço.
+ * @author Igor Braga
+ * @version 1.0
  */
 public class Escola
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private boolean escolaPublica;
 
     private Endereco endereco;
@@ -22,12 +22,18 @@ public class Escola
         this.endereco = endereco;
         setTipo();
     }
-
+/*
+* Define se a escola é pública ou privada
+* @param boolean, true caso a escola seja pública.
+* */
     public void setEscolaPublica(boolean escolaPublica) {
         this.escolaPublica = escolaPublica;
         setTipo();
     }
-
+/**
+ * Busca o valor da subClasse Endereço
+ * @see Endereco
+ */
     public Endereco getEndereco() {
         return endereco;
     }

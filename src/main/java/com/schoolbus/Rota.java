@@ -1,5 +1,4 @@
 package com.schoolbus;
-
 import java.awt.*;
 
 /**

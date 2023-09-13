@@ -1,5 +1,4 @@
 package com.schoolbus;
-
 /**
  * Escreva uma descrição da classe Veculo aqui.
  * 

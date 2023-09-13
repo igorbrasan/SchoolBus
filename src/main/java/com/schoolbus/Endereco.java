@@ -1,5 +1,6 @@
 package com.schoolbus;
 
+
 /**
  * Escreva uma descrição da classe Endereco aqui.
  * 
