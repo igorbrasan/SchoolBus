@@ -10,7 +10,9 @@ public class Aluno extends Pessoa
     public Escola escola;
     public Rota rota;
     private String matricula, serie;
-    public Aluno(Escola escola, Rota rota, String matricula, String serie, int x) {
+
+    public Aluno(String nomeCivil, String nomeSocial, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco, Escola escola, Rota rota, String matricula, String serie) {
+        super(nomeCivil, nomeSocial, cpf, nomePai, nomeMae, naturalidade, telefone, endereco);
         this.escola = escola;
         this.rota = rota;
         this.matricula = matricula;

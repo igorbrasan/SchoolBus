@@ -12,18 +12,19 @@ public class Motorista extends Pessoa
     private Boolean terceirizado;
     private Contrato contrato;
 
-    public Motorista(String num_cnh, String categoria_cnh)
-    {
-        this.num_cnh = num_cnh;
-        this.terceirizado = false;
-        this.categoria_cnh = categoria_cnh;
-    }
-
-    public Motorista(String num_cnh, String categoria_cnh, Contrato contrato) {
+    public Motorista(String nomeCivil, String nomeSocial, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco, String num_cnh, String categoria_cnh, Contrato contrato) {
+        super(nomeCivil, nomeSocial, cpf, nomePai, nomeMae, naturalidade, telefone, endereco);
         this.num_cnh = num_cnh;
         this.categoria_cnh = categoria_cnh;
         this.terceirizado = true;
         this.contrato = contrato;
+    }
+
+    public Motorista(String nomeCivil, String nomeSocial, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco, String num_cnh, String categoria_cnh) {
+        super(nomeCivil, nomeSocial, cpf, nomePai, nomeMae, naturalidade, telefone, endereco);
+        this.num_cnh = num_cnh;
+        this.categoria_cnh = categoria_cnh;
+        this.terceirizado = false;
     }
 
     public String getNum_cnh() {

@@ -48,11 +48,11 @@ public class Veiculo
         this.modelo = modelo;
     }
 
-    public String getAno() {
+    public int getAno() {
         return ano;
     }
 
-    public void setAno(String ano) {
+    public void setAno(int ano) {
         this.ano = ano;
     }
 
