@@ -54,7 +54,8 @@ public class Motorista extends Pessoa
         if (terceirizado) {
             return contrato;
         }
-        return null;
+        throw  new IllegalArgumentException("Esse método é inválido para motoristas não terceirizados.");
+
     }
 
     public void setContrato(Contrato contrato) {

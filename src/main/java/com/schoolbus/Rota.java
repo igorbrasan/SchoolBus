@@ -1,5 +1,7 @@
 package com.schoolbus;
 
+import java.awt.*;
+
 /**
  * Escreva uma descrição da classe Rota aqui.
  * 
@@ -8,27 +10,26 @@ package com.schoolbus;
  */
 public class Rota
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
-    private int x;
+   private String pontoDePartida, pontoDeChegada;
 
-    /**
-     * Construtor para objetos da classe Rota
-     */
-    public Rota()
-    {
-        // inicializa variáveis de instância
-        x = 0;
+    public Rota(String pontoDePartida, String pontoDeChegada) {
+        this.pontoDePartida = pontoDePartida;
+        this.pontoDeChegada = pontoDeChegada;
     }
 
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   um exemplo de um parâmetro de método
-     * @return     a soma de x e y 
-     */
-    public int sampleMethod(int y)
-    {
-        // escreva seu código aqui
-        return x + y;
+    public String getPontoDePartida() {
+        return pontoDePartida;
+    }
+
+    public void setPontoDePartida(String pontoDePartida) {
+        this.pontoDePartida = pontoDePartida;
+    }
+
+    public String getPontoDeChegada() {
+        return pontoDeChegada;
+    }
+
+    public void setPontoDeChegada(String pontoDeChegada) {
+        this.pontoDeChegada = pontoDeChegada;
     }
 }

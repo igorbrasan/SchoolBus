@@ -75,7 +75,8 @@ public class Veiculo
     public Contrato getContrato() {
         if (alugado) {
             return contrato;
-        } return null;
+        }
+        throw  new IllegalArgumentException("Esse método é inválido para veículos não alugados.");
     }
 
     public void setContrato(Contrato contrato) {

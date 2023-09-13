@@ -9,20 +9,34 @@ package com.schoolbus;
 public class Endereco
 {
     private String nomeDaRua, complemento, bairro;
-    private int numeroImovel;
 
-    /**
-     * Construtor para objetos da classe Endereco
-     */
-    public Endereco()
-    {
-
+    public Endereco(String nomeDaRua, String complemento, String bairro) {
+        this.nomeDaRua = nomeDaRua;
+        this.complemento = complemento;
+        this.bairro = bairro;
     }
 
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   um exemplo de um parâmetro de método
-     * @return     a soma de x e y 
-     */
+    public String getNomeDaRua() {
+        return nomeDaRua;
+    }
+
+    public void setNomeDaRua(String nomeDaRua) {
+        this.nomeDaRua = nomeDaRua;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
 }

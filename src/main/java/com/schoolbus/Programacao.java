@@ -7,33 +7,47 @@ package com.schoolbus;
  */
 public class Programacao{
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
-    private int x;
     public Veiculo veiculo;
     public Rota rota;
     public Motorista motorista;
     public String dataHora;
-    
-    
-    
 
-    /**
-     * Construtor para objetos da classe Roteiro
-     */
-    public Programacao()
-    {
-        // inicializa variáveis de instância
-        x = 0;
+    public Programacao(Veiculo veiculo, Rota rota, Motorista motorista, String dataHora) {
+        this.veiculo = veiculo;
+        this.rota = rota;
+        this.motorista = motorista;
+        this.dataHora = dataHora;
     }
 
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   um exemplo de um parâmetro de método
-     * @return     a soma de x e y 
-     */
-    public int sampleMethod(int y)
-    {
-        // escreva seu código aqui
-        return x + y;
+    public Veiculo getVeiculo() {
+        return veiculo;
+    }
+
+    public void setVeiculo(Veiculo veiculo) {
+        this.veiculo = veiculo;
+    }
+
+    public Rota getRota() {
+        return rota;
+    }
+
+    public void setRota(Rota rota) {
+        this.rota = rota;
+    }
+
+    public Motorista getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(Motorista motorista) {
+        this.motorista = motorista;
+    }
+
+    public String getDataHora() {
+        return dataHora;
+    }
+
+    public void setDataHora(String dataHora) {
+        this.dataHora = dataHora;
     }
 }
