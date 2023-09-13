@@ -7,7 +7,7 @@ O objetivo deste trabalho é desenvolver de forma incremental um projeto sobre o
 Para este exercício é necessário que sejam identificadas as classes da aplicação conforme exercício feito em sala, modelo de classes UML (utilizando o BlueJ).
 
 O SchoolBus é o contexto da aplicação que desejamos construir. 
-Nesta aplicação, o objetivo é permitir que a secretaria de educação (estadual ou municipal) possa gerenciar e controlar o acesso de alunos da rede pública (municipal ou estadual) às linhas de transporte escolar oferecidas para levar o aluno de casa até a escola. A secretaria pode cadastrar alunos, veículos, motoristas e rotas oferecidas. A secretaria também deseja realizar a programação das viagens que deverá conter a rota, designação dos veículos que executará a viagem, o motorista responsável e o horário de início da viagem.
+5aNesta aplicação, o objetivo é permitir que a secretaria de educação (estadual ou municipal) possa gerenciar e controlar o acesso de alunos da rede pública (municipal ou estadual) às linhas de transporte escolar oferecidas para levar o aluno de casa até a escola. A secretaria pode cadastrar alunos, veículos, motoristas e rotas oferecidas. A secretaria também deseja realizar a programação das viagens que deverá conter a rota, designação dos veículos que executará a viagem, o motorista responsável e o horário de início da viagem.
 
 Os veículos devem conter todas as informações básicas como Placa, Ano, Modelo, capacidade (número de assentos). Os veículos podem ser próprios (da própria secretaria) ou alugados. No caso dos veículos alugados, eles devem indicar o número do contrato a que ele está associado.
 
