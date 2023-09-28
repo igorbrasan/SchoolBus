@@ -1,5 +1,8 @@
 package com.schoolbus;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  * Classe que descreve a entidade escola no sistema SchoolBus
  * Futuramente deve ser usada como ponto de destino para o schoolBus por meio do parametro endereço.
@@ -9,7 +12,7 @@ package com.schoolbus;
 public class Escola
 {
     private boolean escolaPublica;
-
+    private ArrayList<Aluno> alunos = new ArrayList<Aluno>();
     private Endereco endereco;
     private String cnpj, nome, telefone;
     private String tipo;
@@ -19,9 +22,26 @@ public class Escola
         this.cnpj = cnpj;
         this.nome = nome;
         this.telefone = telefone;
-        this.endereco = endereco;
         setTipo();
     }
+    public void matricularAluno(Aluno aluno){
+        alunos.add(aluno);
+    }
+
+    /**
+     * Na classe Escola, implemente um método para exibir todos os alunos matriculados na escola. Devem ser listados a matrícula, CPF, nome social e série do aluno.
+     * @return
+     */
+    public Aluno listAlunos(){
+        for(Iterator<Aluno> it = alunos.iterator(); it.hasNext();){
+            Aluno elem = it.next();
+            System.out.println(elem.getNomeSocial());
+            System.out.println(elem.getMatricula());
+            System.out.println(elem.getCpf());
+            System.out.println(elem.getSerie());
+        }
+
+}
 /*
 * Define se a escola é pública ou privada
 * @param boolean, true caso a escola seja pública.
@@ -80,4 +100,6 @@ public class Escola
             this.tipo = "Privada";
         }
     }
+
+
 }

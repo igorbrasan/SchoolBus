@@ -10,11 +10,28 @@ package com.schoolbus;
 public class Endereco
 {
     private String nomeDaRua, complemento, bairro;
+    private  int numero;
 
-    public Endereco(String nomeDaRua, String complemento, String bairro) {
+    /**
+     * \Inicializa a instancia
+     * @param nomeDaRua
+     * @param complemento
+     * @param bairro
+     * @param numero
+     */
+    public Endereco(String nomeDaRua, String complemento, String bairro, int numero) {
         this.nomeDaRua = nomeDaRua;
         this.complemento = complemento;
         this.bairro = bairro;
+        this.numero = numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public String getNomeDaRua() {
