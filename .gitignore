@@ -40,3 +40,12 @@ build/
 
 ### Javadocs ###
 javadoc/
+index-files
+assignments_ava
+com
+legal
+resources
+script-dir
+target
+*.class
+*.ctxt
