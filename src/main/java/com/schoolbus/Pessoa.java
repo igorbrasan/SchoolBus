@@ -1,5 +1,7 @@
 package com.schoolbus;
 
+import java.util.Date;
+
 /**
  * Escreva uma descrição da classe Pessoa aqui.
  * 
@@ -11,12 +13,21 @@ public class Pessoa {
     private String nomeRazaoSocial;
     private String naturalidadeOrigem, telefone;
     private Endereco endereco;
+    private Date dataInicial;
 
-    public Pessoa(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Endereco endereco) {
+    public Pessoa(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Endereco endereco, Date dataInicial) {
         this.nomeRazaoSocial = nomeRazaoSocial;
         this.naturalidadeOrigem = naturalidadeOrigem;
         this.telefone = telefone;
         this.endereco = endereco;
+        this.dataInicial = dataInicial;
+    }
+
+    public Pessoa(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Date dataInicial) {
+        this.nomeRazaoSocial = nomeRazaoSocial;
+        this.naturalidadeOrigem = naturalidadeOrigem;
+        this.telefone = telefone;
+        this.dataInicial = dataInicial;
     }
 
     public String getNomeRazaoSocial() {
