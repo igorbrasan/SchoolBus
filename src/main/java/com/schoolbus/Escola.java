@@ -1,6 +1,7 @@
 package com.schoolbus;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 
 /**
@@ -9,21 +10,22 @@ import java.util.Iterator;
  * @author Igor Braga
  * @version 1.0
  */
-public class Escola
+public class Escola extends PessoaJuridica
 {
     private boolean escolaPublica;
-    private ArrayList<Aluno> alunos = new ArrayList<Aluno>();
-    private Endereco endereco;
-    private String cnpj, nome, telefone;
-    private String tipo;
+    private ArrayList<Aluno> alunos;
+        private String tipo;
 
-    public Escola(boolean escolaPublica, Endereco endereco, String cnpj, String nome, String telefone) {
+    public Escola(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Date dataInicial, String cnpj, String nomeFantasia, String telefone1, boolean escolaPublica) {
+        super(nomeRazaoSocial, naturalidadeOrigem, telefone, dataInicial, cnpj, nomeFantasia, telefone1);
         this.escolaPublica = escolaPublica;
-        this.cnpj = cnpj;
-        this.nome = nome;
-        this.telefone = telefone;
         setTipo();
     }
+
+    /**
+     *MAtricular um aluno à escola.
+     * @param aluno
+     */
     public void matricularAluno(Aluno aluno){
         alunos.add(aluno);
     }
@@ -32,7 +34,7 @@ public class Escola
      * Na classe Escola, implemente um método para exibir todos os alunos matriculados na escola. Devem ser listados a matrícula, CPF, nome social e série do aluno.
      * @return
      */
-    public Aluno listAlunos(){
+    public void listAlunos(){
         for(Iterator<Aluno> it = alunos.iterator(); it.hasNext();){
             Aluno elem = it.next();
             System.out.println(elem.getNomeSocial());
@@ -41,7 +43,9 @@ public class Escola
             System.out.println(elem.getSerie());
         }
 
-}
+    }
+
+
 /*
 * Define se a escola é pública ou privada
 * @param boolean, true caso a escola seja pública.
@@ -54,41 +58,7 @@ public class Escola
  * Busca o valor da subClasse Endereço
  * @see Endereco
  */
-    public Endereco getEndereco() {
-        return endereco;
-    }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
-    public String getCnpj() {
-        return cnpj;
-    }
-
-    public void setCnpj(String cnpj) {
-        this.cnpj = cnpj;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
 
     private void setTipo()
     {
