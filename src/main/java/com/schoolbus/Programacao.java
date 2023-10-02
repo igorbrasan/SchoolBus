@@ -1,7 +1,8 @@
 package com.schoolbus;
 
 /**
- * Escreva uma descrição da classe Roteiro aqui.
+ * QUadro de horários em que um veículo irá saír, com qual motorista, que data, que horário, e qual rota irá seguir.
+ * Uma meta-entidade organizadora?.
  * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)

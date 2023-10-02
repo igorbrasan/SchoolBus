@@ -6,82 +6,33 @@ package com.schoolbus;
  * @author Igorbrasan
  * @version 0.1
  */
-public class Pessoa
-{
+public class Pessoa {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
-    private String nomeCivil, nomeSocial, cpf, nomePai, nomeMae; 
-    private String naturalidade, telefone;
+    private String nomeRazaoSocial;
+    private String naturalidadeOrigem, telefone;
     private Endereco endereco;
 
-    public Pessoa(String nomeCivil, String nomeSocial, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco) {
-        this.nomeCivil = nomeCivil;
-        this.nomeSocial = nomeSocial;
-        this.cpf = cpf;
-        this.nomePai = nomePai;
-        this.nomeMae = nomeMae;
-        this.naturalidade = naturalidade;
+    public Pessoa(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Endereco endereco) {
+        this.nomeRazaoSocial = nomeRazaoSocial;
+        this.naturalidadeOrigem = naturalidadeOrigem;
         this.telefone = telefone;
         this.endereco = endereco;
     }
 
-    public Pessoa(String nomeCivil, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco) {
-        this.nomeCivil = nomeCivil;
-	this.nomeSocial = nomeCivil;
-        this.cpf = cpf;
-        this.nomePai = nomePai;
-        this.nomeMae = nomeMae;
-        this.naturalidade = naturalidade;
-        this.telefone = telefone;
-        this.endereco = endereco;
-        
+    public String getNomeRazaoSocial() {
+        return nomeRazaoSocial;
     }
 
-    public String getNomeCivil() {
-        return nomeCivil;
+    public void setNomeRazaoSocial(String nomeRazaoSocial) {
+        this.nomeRazaoSocial = nomeRazaoSocial;
     }
 
-    public void setNomeCivil(String nomeCivil) {
-        this.nomeCivil = nomeCivil;
+    public String getNaturalidadeOrigem() {
+        return naturalidadeOrigem;
     }
 
-    public String getNomeSocial() {
-        return nomeSocial;
-    }
-
-    public void setNomeSocial(String nomeSocial) {
-        this.nomeSocial = nomeSocial;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getNomePai() {
-        return nomePai;
-    }
-
-    public void setNomePai(String nomePai) {
-        this.nomePai = nomePai;
-    }
-
-    public String getNomeMae() {
-        return nomeMae;
-    }
-
-    public void setNomeMae(String nomeMae) {
-        this.nomeMae = nomeMae;
-    }
-
-    public String getNaturalidade() {
-        return naturalidade;
-    }
-
-    public void setNaturalidade(String naturalidade) {
-        this.naturalidade = naturalidade;
+    public void setNaturalidadeOrigem(String naturalidadeOrigem) {
+        this.naturalidadeOrigem = naturalidadeOrigem;
     }
 
     public String getTelefone() {
@@ -100,3 +51,22 @@ public class Pessoa
         this.endereco = endereco;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,7 @@
 package com.schoolbus;
 
+import java.util.ArrayList;
+
 /**
  * Escreva uma descrição da classe Motorista aqui.
  * 
@@ -12,7 +14,22 @@ public class Motorista extends Pessoa
     private String num_cnh, categoria_cnh;
     private Boolean terceirizado;
     private Contrato contrato;
+    public ArrayList<Contrato> contratoArrayList;
 
+    /**
+     * Construtor para motoristas terceirizados.
+     * @param nomeCivil
+     * @param nomeSocial
+     * @param cpf
+     * @param nomePai
+     * @param nomeMae
+     * @param naturalidade
+     * @param telefone
+     * @param endereco
+     * @param num_cnh
+     * @param categoria_cnh
+     * @param contrato
+     */
     public Motorista(String nomeCivil, String nomeSocial, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco, String num_cnh, String categoria_cnh, Contrato contrato) {
         super(nomeCivil, nomeSocial, cpf, nomePai, nomeMae, naturalidade, telefone, endereco);
         this.num_cnh = num_cnh;
@@ -21,12 +38,30 @@ public class Motorista extends Pessoa
         this.contrato = contrato;
     }
 
+    /**
+     * Construtor para motorista não terceirizado.
+     * @param nomeCivil
+     * @param nomeSocial
+     * @param cpf
+     * @param nomePai
+     * @param nomeMae
+     * @param naturalidade
+     * @param telefone
+     * @param endereco
+     * @param num_cnh
+     * @param categoria_cnh
+     */
     public Motorista(String nomeCivil, String nomeSocial, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco, String num_cnh, String categoria_cnh) {
         super(nomeCivil, nomeSocial, cpf, nomePai, nomeMae, naturalidade, telefone, endereco);
         this.num_cnh = num_cnh;
         this.categoria_cnh = categoria_cnh;
         this.terceirizado = false;
     }
+
+    public void adicionarContrato(Contrato contrato){
+        contratoArrayList.add(contrato);
+    }
+
 
     public String getNum_cnh() {
         return num_cnh;

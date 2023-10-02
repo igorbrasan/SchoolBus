@@ -6,30 +6,13 @@ package com.schoolbus;
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class Aluno extends Pessoa
+public class Aluno extends PessoaFisica
 {
     public Escola escola;
     public Rota rota;
     private String matricula, serie;
 
-    /**
-     * Implemente um construtor para a classe Aluno que permita inicializar todos os atributos exceto a instância da classe Escola e a instância da classe Rota.
-     * @param nomeCivil
-     * @param nomeSocial
-     * @param cpf
-     * @param nomePai
-     * @param nomeMae
-     * @param naturalidade
-     * @param telefone
-     * @param endereco
-     * @param matricula
-     * @param serie
-     */
-    public Aluno(String nomeCivil, String nomeSocial, String cpf, String nomePai, String nomeMae, String naturalidade, String telefone, Endereco endereco, String matricula, String serie) {
-        super(nomeCivil, nomeSocial, cpf, nomePai, nomeMae, naturalidade, telefone, endereco);
-        this.matricula = matricula;
-        this.serie = serie;
-    }
+
 
     public Escola getEscola() {
         return escola;
