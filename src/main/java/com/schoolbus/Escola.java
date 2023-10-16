@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 
+
 /**
  * Classe que descreve a entidade escola no sistema SchoolBus
  * Futuramente deve ser usada como ponto de destino para o schoolBus por meio do parametro endereço.

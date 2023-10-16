@@ -3,7 +3,6 @@ import java.awt.*;
 
 /**
  * Escreva uma descrição da classe Rota aqui.
- * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
