@@ -1,5 +1,4 @@
 package com.schoolbus;
-import java.awt.*;
 
 /**
  * Escreva uma descrição da classe Rota aqui.
