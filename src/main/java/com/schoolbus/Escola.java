@@ -15,7 +15,15 @@ public class Escola extends PessoaJuridica
 {
     private boolean escolaPublica;
     private ArrayList<Aluno> alunos;
-        private String tipo;
+    private String tipo;
+
+    private String getTipo() {
+        return tipo;
+    }
+
+    private void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 
     public Escola(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Date dataInicial, String cnpj, String nomeFantasia, String telefone1, boolean escolaPublica) {
         super(nomeRazaoSocial, naturalidadeOrigem, telefone, dataInicial, cnpj, nomeFantasia, telefone1);
