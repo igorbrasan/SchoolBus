@@ -1,6 +1,8 @@
 # SchoolBus 
 ### Projeto de Exercício incremental em Programação Orientada a Objetos.
 
+#### Branch NetBeans 
+Criei essa branch para praticaŕo uso de branches, e tirar um pouco o apoio constante de usar o IntelliJ. Pretendo seguir o projeto nessa branch. 
 ## Exercício Incremental - Parte I - Identificação das Classes do SchoolBus,
 
 O objetivo deste trabalho é desenvolver de forma incremental um projeto sobre o tema SchoolBus, onde abordará conceitos de programação orientada a objetos. 
