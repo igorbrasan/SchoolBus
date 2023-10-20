@@ -17,20 +17,27 @@ public class Escola extends PessoaJuridica
     private ArrayList<Aluno> alunos;
     private String tipo;
 
-    private String getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    private void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
+    /**
+     * Construtor de Pessoa Jurídica do tipo Escola
+     * @param nomeRazaoSocial
+     * @param naturalidadeOrigem
+     * @param telefone
+     * @param dataInicial
+     * @param cnpj
+     * @param nomeFantasia
+     * @param telefone1
+     * @param escolaPublica
+     */
     public Escola(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Date dataInicial, String cnpj, String nomeFantasia, String telefone1, boolean escolaPublica) {
         super(nomeRazaoSocial, naturalidadeOrigem, telefone, dataInicial, cnpj, nomeFantasia, telefone1);
         this.escolaPublica = escolaPublica;
         setTipo();
     }
-
+    
     /**
      *MAtricular um aluno à escola.
      * @param aluno
@@ -40,7 +47,8 @@ public class Escola extends PessoaJuridica
     }
 
     /**
-     * Na classe Escola, implemente um método para exibir todos os alunos matriculados na escola. Devem ser listados a matrícula, CPF, nome social e série do aluno.
+     * Exibir todos os alunos matriculados na escola. 
+     * São listados a matrícula, CPF, nome social e série do aluno.
      * @return
      */
     public void listAlunos(){
@@ -54,21 +62,20 @@ public class Escola extends PessoaJuridica
 
     }
 
-
 /*
 * Define se a escola é pública ou privada
 * @param boolean, true caso a escola seja pública.
 * */
-    public void setEscolaPublica(boolean escolaPublica) {
+public void setEscolaPublica(boolean escolaPublica) {
         this.escolaPublica = escolaPublica;
         setTipo();
     }
-/**
- * Busca o valor da subClasse Endereço
- * @see Endereco
- */
+    /**
+     * Busca o valor da subClasse Endereço
+     * @see Endereco
+     */
 
-
+    
     private void setTipo()
     {
         if(escolaPublica)
@@ -79,6 +86,5 @@ public class Escola extends PessoaJuridica
             this.tipo = "Privada";
         }
     }
+    }
 
-
-}
