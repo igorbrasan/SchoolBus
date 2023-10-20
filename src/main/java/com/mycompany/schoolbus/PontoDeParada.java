@@ -5,6 +5,7 @@
 package com.mycompany.schoolbus;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
@@ -40,6 +41,14 @@ public class PontoDeParada {
         this.id = id;
         alunos.add(aluno);
         quantidadeDePontos++;
+    }
+
+     public int quantosAlunos(){
+        int x = 0;
+        for(Iterator<Aluno> it = alunos.iterator(); it.hasNext();){
+            x++;
+        }
+        return x;
     }
 
     public String getNome() {
