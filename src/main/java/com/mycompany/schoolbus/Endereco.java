@@ -25,6 +25,8 @@ public class Endereco
         this.bairro = bairro;
         this.numero = numero;
     }
+
+    public Endereco(){}
     /**
      * Get value of Numero.
      * @return 

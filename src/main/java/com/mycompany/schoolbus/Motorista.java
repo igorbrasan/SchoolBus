@@ -32,85 +32,17 @@ public class Motorista extends PessoaFisica
      * @param contrato
      * @param dataInicial
      */
-    public Motorista(String nomeRazaoSocial, String nomeSocial, String naturalidadeOrigem, String telefone, Endereco endereco, String cpf, String nomePai, String nomeMae, String num_cnh, String categoria_cnh, Contrato contrato, Date dataInicial) {
+    public Motorista(String nomeRazaoSocial, String nomeSocial, String naturalidadeOrigem, String telefone, Endereco endereco, String cpf, String nomePai, String nomeMae, String num_cnh, String categoria_cnh, boolean terceirizado, Date dataInicial) {
         super(nomeRazaoSocial, nomeSocial, naturalidadeOrigem, telefone, endereco, cpf, nomePai, nomeMae, dataInicial);
         this.num_cnh = num_cnh;
         this.categoria_cnh = categoria_cnh;
-        terceirizado = true;
-        adicionarContrato(contrato);
-    }
+        this.terceirizado = terceirizado;
+        if(terceirizado){
+            System.out.println("Inclua um contrato para concluir o Registro");
+        }
+        }
+    
 
-    /**
-     * Motorista terceirizado sem nome social.
-     *
-     * @param nomeRazaoSocial
-     * @param naturalidadeOrigem
-     * @param telefone
-     * @param endereco
-     * @param cpf
-     * @param nomePai
-     * @param nomeMae
-     * @param num_cnh
-     * @param categoria_cnh
-     * @param contrato
-     * @param dataInicial
-     */
-    public Motorista(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Endereco endereco, String cpf, String nomePai, String nomeMae, String num_cnh, String categoria_cnh, Contrato contrato, Date dataInicial) {
-        super(nomeRazaoSocial, naturalidadeOrigem, telefone, endereco, cpf, nomePai, nomeMae, dataInicial);
-        this.num_cnh = num_cnh;
-        this.categoria_cnh = categoria_cnh;
-        terceirizado = true;
-        adicionarContrato(contrato);
-    }
-
-    /**
-     * Motorista não terceirizado com nome social;
-     *
-     * @param nomeRazaoSocial
-     * @param nomeSocial
-     * @param naturalidadeOrigem
-     * @param telefone
-     * @param endereco
-     * @param cpf
-     * @param nomePai
-     * @param nomeMae
-     * @param num_cnh
-     * @param categoria_cnh
-     * @param terceirizado
-     * @param contrato
-     * @param contratoArrayList
-     * @param dataInicial
-     */
-    public Motorista(String nomeRazaoSocial, String nomeSocial, String naturalidadeOrigem, String telefone, Endereco endereco, String cpf, String nomePai, String nomeMae, String num_cnh, String categoria_cnh, Boolean terceirizado, Contrato contrato, ArrayList<Contrato> contratoArrayList, Date dataInicial) {
-        super(nomeRazaoSocial, nomeSocial, naturalidadeOrigem, telefone, endereco, cpf, nomePai, nomeMae, dataInicial);
-        this.num_cnh = num_cnh;
-        this.categoria_cnh = categoria_cnh;
-        this.terceirizado = false;
-    }
-
-    /**
-     * Motorista não terceirizado sem nome social.
-     *
-     * @param nomeRazaoSocial
-     * @param naturalidadeOrigem
-     * @param telefone
-     * @param endereco
-     * @param cpf
-     * @param nomePai
-     * @param nomeMae
-     * @param num_cnh
-     * @param categoria_cnh
-     * @param terceirizado
-     * @param contrato
-     * @param contratoArrayList
-     * @param dataInicial
-     */
-    public Motorista(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Endereco endereco, String cpf, String nomePai, String nomeMae, String num_cnh, String categoria_cnh, Boolean terceirizado, Contrato contrato, ArrayList<Contrato> contratoArrayList, Date dataInicial) {
-        super(nomeRazaoSocial, naturalidadeOrigem, telefone, endereco, cpf, nomePai, nomeMae, dataInicial);
-        this.num_cnh = num_cnh;
-        this.categoria_cnh = categoria_cnh;
-        this.terceirizado = false;
-    }
 
     public void adicionarContrato(Contrato contrato){
         contratoArrayList.add(contrato);

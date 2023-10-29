@@ -36,26 +36,6 @@ public class Aluno extends PessoaFisica
     }
 
     /**
-     * |Construtor de aluno com nome social igual ao nome civil.
-     *
-     * @param nomeRazaoSocial
-     * @param naturalidadeOrigem
-     * @param telefone
-     * @param endereco
-     * @param cpf
-     * @param nomePai
-     * @param nomeMae
-     * @param matricula
-     * @param serie
-     * @param dataInicial
-     */
-    public Aluno(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Endereco endereco, String cpf, String nomePai, String nomeMae, String matricula, String serie, Date dataInicial) {
-        super(nomeRazaoSocial, naturalidadeOrigem, telefone, endereco, cpf, nomePai, nomeMae, dataInicial);
-        this.matricula = matricula;
-        this.serie = serie;
-    }
-
-    /**
      * 
      * @return
      */

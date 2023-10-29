@@ -7,7 +7,7 @@ public class PessoaFisica extends Pessoa{
     private String nomeSocial, cpf, nomePai, nomeMae;
 
     /**
-     * Construtor para pessoa Física com nome Civil e nome Social distintos
+     * Construtor para pessoa Física com nome Civil e nome Social
      * @param nomeRazaoSocial
      * @param nomeSocial
      * @param naturalidadeOrigem
@@ -25,26 +25,6 @@ public class PessoaFisica extends Pessoa{
         this.nomePai = nomePai;
         this.nomeMae = nomeMae;
 
-    }
-
-    /**
-     * Construtor para Pessoa Física com Nome social e Nome Civil(Razão social) distintos.
-     *
-     * @param nomeRazaoSocial
-     * @param naturalidadeOrigem
-     * @param telefone
-     * @param endereco
-     * @param cpf
-     * @param nomePai
-     * @param nomeMae
-     * @param dataInicial
-     */
-    public PessoaFisica(String nomeRazaoSocial, String naturalidadeOrigem, String telefone, Endereco endereco, String cpf, String nomePai, String nomeMae, Date dataInicial) {
-        super(nomeRazaoSocial, naturalidadeOrigem, telefone, endereco, dataInicial);
-        nomeSocial = nomeRazaoSocial;
-        this.cpf = cpf;
-        this.nomePai = nomePai;
-        this.nomeMae = nomeMae;
     }
 
     public String getNomeSocial() {
